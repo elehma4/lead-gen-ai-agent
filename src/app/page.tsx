@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div
         id="page-container"
-        className="mx-auto flex min-h-dvh w-full min-w-[320px] flex-col bg-gray-100 dark:bg-gray-900 dark:text-gray-100"
+        className="mx-auto flex min-h-dvh w-full min-w-[320px] flex-col bg-gray-100 dark:bg-gray-950 dark:text-gray-100"
       >
         <Header />
         <main id="page-content" className="flex max-w-full flex-auto flex-col">
@@ -15,7 +15,7 @@ export default function Home() {
             <div className="font-semibold mb-4 pl-2">
               Welcome to the future of lead generation and research.
             </div>
-            <div className="flex items-center justify-center rounded-xl border-2 border-gray-200 bg-gray-50 p-8 text-gray-400 dark:border-gray-700 dark:bg-gray-800">
+            <div className="flex items-center justify-center rounded-xl  bg-gray-50 p-8 text-gray-400 dark:bg-gray-800">
               <Dashboard />
             </div>
           </div>

@@ -48,7 +48,7 @@ function classNames(...classes: string[]) {
 
 export default function Dashboard() {
   return (
-    <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+    <div className="divide-y divide-gray-200 overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
       {actions.map((action, actionIdx) => (
         <div
             key={action.title}
@@ -57,7 +57,7 @@ export default function Dashboard() {
                 actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
                 actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
                 actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
-                'group relative bg-gray-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500',
+                'group relative bg-gray-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-black',
             )}
         >
             <div>

@@ -23,10 +23,10 @@ export default function Search () {
         <Header />
         <main id="page-content" className="flex max-w-full flex-auto flex-col">
           <div className="container m-auto p-4 lg:p-8 xl:max-w-7xl flex flex-col gap-4">
-            <div className="flex items-center justify-center rounded-xl border-2 border-gray-200 bg-gray-50 p-8 text-gray-400 dark:border-gray-700 dark:bg-gray-800">
+            <div className="flex items-center justify-center rounded-xl border-2 border-gray-200 bg-gray-50 p-2 text-gray-400 dark:border-gray-700 dark:bg-gray-800">
               <Response responses={responses} />
             </div>
-            <div className="flex items-center justify-center rounded-xl border-2 border-gray-200 bg-gray-50 p-8 text-gray-400 dark:border-gray-700 dark:bg-gray-800">
+            <div className="flex items-center justify-center rounded-xl border-2 border-gray-200 bg-gray-50 p-2 text-gray-400 dark:border-gray-700 dark:bg-gray-800">
               <TagsInput />
             </div>
           </div>

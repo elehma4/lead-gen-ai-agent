@@ -10,7 +10,7 @@ type ResponseProps = {
 
 const Response: React.FC<ResponseProps> = ({ responses }) => {
   return (
-    <div className="response-container mx-auto p-4 lg:p-8 xl:max-w-7xl mt-4 bg-white dark:bg-gray-800 shadow-md shadow-black rounded-lg min-h-[29vh] max-h-[44vh] overflow-y-auto contain-content w-full">
+    <div className="response-container mx-auto p-4 lg:p-8 xl:max-w-7xl mt-4 bg-white dark:bg-gray-800 rounded-lg lg:min-h-[33vh] min-h-[29vh] max-h-[44vh] overflow-y-auto contain-content w-full">
       {responses.map((response, index) => (
         <motion.div
           key={index}
