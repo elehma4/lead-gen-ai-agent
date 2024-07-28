@@ -48,7 +48,7 @@ function classNames(...classes: string[]) {
 
 export default function Dashboard() {
   return (
-    <div className="divide-y divide-gray-200 overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+    <div className="divide-y divide-gray-200 overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 bg-gray-950">
       {actions.map((action, actionIdx) => (
         <div
             key={action.title}
@@ -57,7 +57,7 @@ export default function Dashboard() {
                 actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
                 actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
                 actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
-                'group relative bg-gray-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-black',
+                'group relative bg-gray-800 p-6 focus-within:scale-[1.01] focus-within:duration-300',
             )}
         >
             <div>
@@ -85,7 +85,7 @@ export default function Dashboard() {
             </div>
             <span
                 aria-hidden="true"
-                className="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400"
+                className="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:ease-in-out duration-300"
             >
                 <svg fill="currentColor" viewBox="0 0 24 24" className="h-6 w-6">
                 <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
