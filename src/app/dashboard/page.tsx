@@ -1,3 +1,5 @@
+'use client';
+
 import {
     EnvelopeIcon,
     FolderOpenIcon,
@@ -55,7 +57,7 @@ export default function Dashboard() {
                 actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
                 actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
                 actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
-                'group relative bg-gray-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500',
+                'group relative bg-gray-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500',
             )}
         >
             <div>

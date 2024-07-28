@@ -24,7 +24,7 @@ export default function Header () {
         <div className="flex items-center">
             {/* Logo */}
             <a
-            href="#"
+            href="/"
             className="group inline-flex items-center gap-2"
             >
             <img
