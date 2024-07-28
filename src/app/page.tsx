@@ -12,9 +12,9 @@ export default function Home() {
         <Header />
         <main id="page-content" className="flex max-w-full flex-auto flex-col">
           <div className="container mx-auto p-4 lg:p-8 xl:max-w-7xl mt-20">
-            <span className="font-semibold">
-              Hello, welcome to the future of lead generation and research.
-            </span>
+            <div className="font-semibold mb-4 pl-2">
+              Welcome to the future of lead generation and research.
+            </div>
             <div className="flex items-center justify-center rounded-xl border-2 border-gray-200 bg-gray-50 p-8 text-gray-400 dark:border-gray-700 dark:bg-gray-800">
               <Dashboard />
             </div>

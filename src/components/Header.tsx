@@ -44,7 +44,7 @@ export default function Header () {
             {/* Desktop Navigation */}
             <nav className="hidden items-center gap-2 lg:flex">
             <a
-                href="/dashboard"
+                href="/"
                 className="group flex items-center gap-2 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 text-sm font-medium text-blue-600 dark:border-transparent dark:bg-gray-700 dark:text-white"
             >
                 <svg
@@ -344,7 +344,7 @@ export default function Header () {
         <div className={`lg:hidden ${mobileNavOpen ? "" : "hidden"}`}>
         <nav className="flex flex-col gap-2 border-t border-gray-200 py-4 dark:border-gray-700">
             <a
-                href="/dashboard"
+                href="/"
                 className="group flex items-center gap-2 rounded-lg border border-blue-50 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-600 dark:border-transparent dark:bg-gray-700/75 dark:text-white"
             >
                 <svg
