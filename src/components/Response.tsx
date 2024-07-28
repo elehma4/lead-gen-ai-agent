@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import ReactMarkdown from 'react-markdown';
+import MarkdownRenderer from './MarkdownRenderer';
 
 type ResponseProps = {
   responses: string[];
@@ -19,9 +19,7 @@ const Response: React.FC<ResponseProps> = ({ responses }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.2 }}
         >
-          <ReactMarkdown className="text-gray-900 dark:text-gray-100">
-            {response}
-          </ReactMarkdown>
+          <MarkdownRenderer markdown={response} />
         </motion.div>
       ))}
     </div>
