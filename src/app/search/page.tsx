@@ -11,14 +11,14 @@ export default function Search () {
   const [responses, setResponses] = useState<string[]>([
     "Hi! 👋 I'm your Lead Gen AI Agent.",
     "Input some keywords into the search bar and I will begin researching for you!",
-    mockData
+    // mockData
   ]);
 
   return (
     <>
       <div
         id="page-container"
-        className="mx-auto flex min-h-dvh w-full min-w-[320px] flex-col bg-gray-100 dark:bg-gray-900 dark:text-gray-100"
+        className="mx-auto flex min-h-dvh w-full min-w-[320px] flex-col bg-gray-100 dark:bg-gray-950 dark:text-gray-100"
       >
         <Header />
         <main id="page-content" className="flex max-w-full flex-auto flex-col">
