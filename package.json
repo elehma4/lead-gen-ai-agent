@@ -1,0 +1,38 @@
+{
+  "name": "lead-gen-ai-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "axios": "^1.7.2",
+    "axios-retry": "^4.4.2",
+    "cheerio": "1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "google-it": "^1.6.4",
+    "lodash.chunk": "^4.2.0",
+    "next": "14.2.5",
+    "openai": "^4.53.2",
+    "puppeteer": "^22.14.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "twitter-api-v2": "^1.17.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+}
