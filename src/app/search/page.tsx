@@ -11,7 +11,7 @@ export default function Search () {
   const [responses, setResponses] = useState<string[]>([
     "Hi! 👋 I'm your Lead Gen AI Agent.",
     "Input some keywords into the search bar and I will begin researching for you!",
-    mockData
+    // mockData
   ]);
 
   return (
