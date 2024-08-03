@@ -29,6 +29,13 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
     }
   };
 
+  const formatDateTime = (dateTime: string | Date) => {
+    if (dateTime instanceof Date) {
+      return dateTime.toLocaleString();
+    }
+    return dateTime;
+  };
+
   const startRow = currentPage * rowsPerPage;
   const endRow = startRow + rowsPerPage;
   const currentData = data.slice(startRow, endRow);
@@ -66,7 +73,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
                     </td>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{row.researchTopic}</td>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{row.website}</td>
-                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{row.dateTime}</td>
+                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{formatDateTime(row.dateTime)}</td>
                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-3">
                       <button className="text-indigo-600 hover:text-indigo-900">
                         View<span className="sr-only">, {row.keyword}</span>

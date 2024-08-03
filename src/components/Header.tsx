@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import { useState } from "react";
 import {
     Menu,
@@ -27,12 +28,12 @@ export default function Header () {
             href="/"
             className="group inline-flex items-center gap-2"
             >
-            <img
+            <Image
                 className="inline-block size-10 transition group-hover:scale-110"
                 aria-hidden="true"
-                src={logo.src}
-            >
-            </img>
+                src={logo}
+                alt="logo"
+            />
             <span>Lead Gen AI Agent</span>
             </a>
             {/* END Logo */}
@@ -63,7 +64,7 @@ export default function Header () {
                 <span>Dashboard</span>
             </a>
             <a
-                href="/search"
+                href="/research"
                 className="group flex items-center gap-2 rounded-lg border border-transparent px-3 py-2 text-sm font-medium text-gray-800 hover:bg-blue-50 hover:text-blue-600 active:border-blue-100 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white dark:active:border-gray-600"
             >
                 <svg
@@ -79,7 +80,7 @@ export default function Header () {
                         clipRule="evenodd"
                     />
                 </svg>
-                <span>Keyword Search</span>
+                <span>Agent Research</span>
             </a>
             <a
                 href="/reports"
@@ -363,7 +364,7 @@ export default function Header () {
                 <span>Dashboard</span>
             </a>
             <a
-                href="/search"
+                href="/research"
                 className="group flex items-center gap-2 rounded-lg border border-transparent px-3 py-2 text-sm font-medium text-gray-800 hover:bg-blue-50 hover:text-blue-600 active:border-blue-100 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white dark:active:border-gray-600"
             >
                 <svg
@@ -379,7 +380,7 @@ export default function Header () {
                         clipRule="evenodd"
                     />
                 </svg>
-                <span>Keyword Search</span>
+                <span>Agent Research</span>
             </a>
             <a
                 href="/reports"

@@ -9,8 +9,8 @@ import {
 
 const actions = [
     {
-        title: 'Keyword Search',
-        href: '/search',
+        title: 'Agent Research',
+        href: '/research',
         icon: MagnifyingGlassIcon,
         iconForeground: 'text-teal-700',
         iconBackground: 'bg-teal-50',
