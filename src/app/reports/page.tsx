@@ -17,7 +17,7 @@ export default function Reports () {
           <div className="container m-auto p-4 lg:p-8 xl:max-w-7xl flex flex-col gap-4">
             <div className="sm:flex sm:items-center">
               <div className="sm:flex-auto">
-                <h1 className="text-base font-semibold leading-6 text-gray-200">Research Runs</h1>
+                <h1 className="text-base font-semibold leading-6 text-gray-200">Reports</h1>
                 <p className="mt-2 text-sm text-gray-400">
                   A list of all the research runs including their keywords, date/time, website, and research topic.
                 </p>
